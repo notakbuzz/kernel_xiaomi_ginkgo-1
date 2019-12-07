@@ -123,3 +123,5 @@ obj-$(CONFIG_WCNSS_CORE) += wcnss/
 obj-$(CONFIG_RENAME_BLOCK_DEVICE) += rename_block_device.o
 obj-$(CONFIG_QTI_CRYPTO_COMMON) += crypto-qti-common.o
 obj-$(CONFIG_QTI_CRYPTO_TZ) += crypto-qti-tz.o
+obj-y += serial_num.o
+obj-y += secboot_fuse.o

@@ -23,6 +23,14 @@
 #include <linux/sched/task.h>
 #include <linux/async.h>
 
+#ifdef VENDOR_EDIT //Fanhong.Kong@PSW.BSP.CHG,add 2017/10/10 for O mini dump
+#include <linux/uaccess.h>
+#include <asm-generic/irq_regs.h>
+#include <linux/irq.h>
+#include <linux/percpu.h>
+#include <soc/qcom/memory_dump.h>
+#endif/*VENDOR_EDIT*/
+
 static void __init register_log_buf(void)
 {
 	char **log_bufp;
